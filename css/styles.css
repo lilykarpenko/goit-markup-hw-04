@@ -305,6 +305,7 @@ h1,h2,h3,p,ul{
     margin-left:-30px;
 }
 .team-lis>.item{
+    border:0;
     background-color: var(--primery-fons-color);
     margin-left: 30px;
     flex-basis : calc(100% / 4 - var(--card-set-gap));
@@ -361,20 +362,14 @@ h1,h2,h3,p,ul{
 .item-container-social{
     padding-left: 30px;
     padding-right: 30px;
-
 }
 
-.team-social-list{
-    
-    display: flex;
+.team-social-list{   
+display: flex;
 }
 .social-linc-point+.social-linc-point{
-  
-    margin-left: 10px;  
-    
-    
-    
-    }
+margin-left: 10px;  
+}
 .team-social-linc{
     display: flex;
     justify-content: center;
@@ -396,7 +391,7 @@ h1,h2,h3,p,ul{
 .team-social-linc:hover,.team-social-linc:focus{
      background-color: var(--blu-color);
 }
-.team-social-linc:hover .team-social-icon
+.team-social-linc:hover .team-social-icon,.team-social-linc:focus .team-social-icon
 {
     fill: var(--white-text);
 }
@@ -417,13 +412,17 @@ h1,h2,h3,p,ul{
     display: flex;
     color:var(--secondary-text-color);
     border: 1px solid var(--icon-color);
+    border-radius: 4%;
     width: 170px;
     height: 92px;
-    margin-left: 30px;
+    
 }
 .clients-linc-list{
-    flex-basis:  calc(100% / 4 - 30px);
+    flex-basis:  calc(100% / 6 - 30px);
     margin-left: 30px; 
+}
+.clients-list>.clients-linc-list+.clients-linc-list{
+    margin-left: 30px;
 }
 
 .clients-icon{
@@ -431,11 +430,12 @@ h1,h2,h3,p,ul{
     fill: var(--icon-color);
 }
 
-.client-linc:focus,.client-linc:hover {
-    border: 1px solid var(--blu-color);}
+.client-linc:focus .clients-icon,.client-linc:hover .clients-icon {
+    fill:var(--blu-color);}
 
-.clients-icon:focus,.clients-icon:hover{
+.client-linc:focus,.client-linc:hover{
     fill:var(--blu-color);
+    border: 1px solid var(--blu-color);
 }
 
 
@@ -544,7 +544,6 @@ margin-bottom: 30px;
     flex-basis:  calc(100% / 4 - 10px);
     margin-left: 10px;
     border-radius: 50%;
-    
     background-position: center;
     background-color: rgba(255, 255, 255, 0.1);
 }
@@ -559,5 +558,7 @@ margin-bottom: 30px;
 .social-icon{
     fill: var(--white-text);
 }
-.social-linc-dord:hover,.social-linc-dord:focus{
-     background-color: var(--blu-color);}
+.social-linc-dord:hover, .social-linc:focus {
+    background-color: var(--blu-color);
+    border-radius: 50%;
+}
