@@ -258,31 +258,32 @@ h1,h2,h3,p,ul{
     margin-left: 30px;
     width: auto;
 }
-.advantages-icon{
-    padding: 25px 100px;
-    margin-bottom: 30px;
-    height: 120px;
-    width: 270px;
+.container-inner{
+    height:120px ;
+    width:270px ;
     background-color: var(--buttom-filtre-color);
+    border-radius: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
-
 .section-title{    
-        padding: 0;
-        margin: 0;
-        margin-bottom: 10px;
-        font-size: 14px;
-        line-height: 1.14;
-        text-transform: uppercase;
-        color:var(--primery-text-color);
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color:var(--primery-text-color);
     }
-    .title-text{
-        padding: 0;
-        margin: 0;
-        line-height: 1.71;
-        color: var(--secondary-text-color);
-        
-    }
+.title-text{
+    padding: 0;
+    margin: 0;
+    line-height: 1.71;
+    color: var(--secondary-text-color);       
+}
     /*picture*/   
 .picture{
     display: flex;
@@ -293,7 +294,7 @@ h1,h2,h3,p,ul{
 .picture>.picture-page{
      flex-basis:  calc(100% / 3 - var(--card-set-gap));
      margin-left: 30px;
-    }
+}
 .picture>.picture-page+.picture-page{
     margin-left: var(--card-set-gap);
 }
@@ -365,10 +366,10 @@ h1,h2,h3,p,ul{
 }
 
 .team-social-list{   
-display: flex;
+    display: flex;
 }
 .social-linc-point+.social-linc-point{
-margin-left: 10px;  
+    margin-left: 10px;  
 }
 .team-social-linc{
     display: flex;
@@ -377,16 +378,12 @@ margin-left: 10px;
     width: 44px;
     height: 44px; 
     border-radius: 50%;
-    background-position: center;
-
-    
+    background-position: center;  
 }
 .team-social-icon{
     fill: var(--icon-color);
     width: 20px;
-    height: 20px; 
-    
-    
+    height: 20px;    
 }
 .team-social-linc:hover,.team-social-linc:focus{
      background-color: var(--blu-color);
@@ -401,8 +398,7 @@ margin-left: 10px;
 /*clients*/
 
 .section-clients{
-    padding-bottom: 85px;
-   
+    padding-bottom: 85px; 
 }
 .clients-list{
     margin-left: -30px;
@@ -410,12 +406,16 @@ margin-left: 10px;
     justify-content: space-between;}
 .client-linc{
     display: flex;
+    justify-content: center;
+    align-items: center;
     color:var(--secondary-text-color);
     border: 1px solid var(--icon-color);
     border-radius: 4%;
     width: 170px;
-    height: 92px;
-    
+    height: 92px; 
+}
+.clients-icon{
+    fill: var(--icon-color);
 }
 .clients-linc-list{
     flex-basis:  calc(100% / 6 - 30px);
@@ -424,12 +424,6 @@ margin-left: 10px;
 .clients-list>.clients-linc-list+.clients-linc-list{
     margin-left: 30px;
 }
-
-.clients-icon{
-    margin: 16px 32px;
-    fill: var(--icon-color);
-}
-
 .client-linc:focus .clients-icon,.client-linc:hover .clients-icon {
     fill:var(--blu-color);}
 
@@ -456,7 +450,7 @@ margin-left: 10px;
 }
 
 .card-set>.item:nth-child(-n + 6){
-margin-bottom: 30px;
+    margin-bottom: 30px;
 }
    
 .card-content{  
@@ -503,7 +497,8 @@ margin-bottom: 30px;
     margin-bottom: 20px;
     
 }
-.studio-doun{color:var(--white-text)
+.studio-doun{
+    color:var(--white-text)
 }
 .contacts-doun{
     font-style:normal;
@@ -549,11 +544,9 @@ margin-bottom: 30px;
 }
 .social-linc{
     display: flex;
-    width: 44px;
-    height: 44px; 
-    justify-content: center;
     align-items: center; 
-    
+    width: 44px;
+    height: 44px;    
 }
 .social-icon{
     fill: var(--white-text);
